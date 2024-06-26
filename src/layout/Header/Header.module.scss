@@ -1,0 +1,45 @@
+.header {
+    position: fixed;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 60px;
+    width: 100vw;
+    padding: 8px 0px;
+    .link {
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 8px 25px;
+        border-radius: 10px;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    .themeBtn {
+        position: absolute;
+        right: 40px;
+    }
+    &.light {
+        background-color: #eef;
+        .link {
+            &:hover {
+                background-color: #dde;
+            }
+            &.active {
+                background-color: #78bbff;
+            }
+        }
+    }
+    &.dark {
+        background-color: #242526;
+        .link {
+            &:hover {
+                background-color: #303132;
+            }
+            &.active {
+                background-color: dodgerblue;
+            }
+        }
+    }
+}
